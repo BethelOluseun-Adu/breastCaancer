@@ -1,0 +1,5 @@
+{
+  "model": trained_model,
+  "scaler": fitted_scaler,
+  "feature_names": feature_list
+}
