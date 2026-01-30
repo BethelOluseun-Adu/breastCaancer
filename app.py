@@ -9,9 +9,8 @@ st.title("🩺 Breast Cancer Prediction System")
 st.write("Enter tumor feature values to predict if it is Benign or Malignant.")
 
 # Load model and scaler
-with open("model/breast_cancer_model.pkl", "rb") as file:
-    model, scaler = pickle.load(file)
-
+with open(model_path, "rb") as file:
+    model = pickle.load(file)
 st.subheader("Tumor Features")
 
 # User inputs
