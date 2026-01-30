@@ -1,9 +1,14 @@
-import os
-import pickle
 import streamlit as st
+import pickle
+import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, "model", "breast_cancer_model.pkl")
+MODEL_DIR = os.path.join(BASE_DIR, "model")
+model_path = os.path.join(MODEL_DIR, "breast_cancer_model.pkl")
+
+if not os.path.exists(model_path):
+    st.error("Model file not found.")
+    st.stop()
 
 with open(model_path, "rb") as file:
     model = pickle.load(file)
