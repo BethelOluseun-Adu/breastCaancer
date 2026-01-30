@@ -1,14 +1,10 @@
-import streamlit as st
-import numpy as np
+import os
 import pickle
+import streamlit as st
 
-# Page config
-st.set_page_config(page_title="Breast Cancer Prediction", layout="centered")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "model", "breast_cancer_model.pkl")
 
-st.title("🩺 Breast Cancer Prediction System")
-st.write("Enter tumor feature values to predict if it is Benign or Malignant.")
-
-# Load model and scaler
 with open(model_path, "rb") as file:
     model = pickle.load(file)
 st.subheader("Tumor Features")
