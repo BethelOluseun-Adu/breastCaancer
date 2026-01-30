@@ -1,6 +1,6 @@
-Name: Osumuo Ikechukwu Charles
-Matric Number: 22CD032194
+Name: Oluseun-Adu Bethel
+Matric Number: 22CD032186
 Machine Learning Algorithm Used: Logistic Regression
 Model persistence method used: Pickle
-Live URL: https://breastcancerprojectosumuo-ikechukwu-charles22cd032194-mw8wn2kh.streamlit.app/
-GitHub Repository Link: https://github.com/JUSTIK3/BreastCancer_Project_Osumuo-Ikechukwu-Charles_22CD032194
+Live URL: 
+GitHub Repository Link: https://github.com/BethelOluseun-Adu/breastCaancer
